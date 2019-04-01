@@ -199,6 +199,11 @@ ipaddr.js@1.8.0:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.8.0.tgz#eaa33d6ddd7ace8f7f6fe0c9ca0440e706738b1e"
   integrity sha1-6qM9bd16zo9/b+DJygRA5wZzix4=
 
+materialize-css@^1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-1.0.0-rc.2.tgz#b9e6b18f698c6ef77bb6b628d59147faf131eff5"
+  integrity sha512-FuQmSyq4Qv0ov7A2qXw0E6/jbQzSWx2P1pg2/XQDYTkkSc/GyiFAxu3fw9zgShwuTvyumEiw5jkxQWT9siqMBQ==
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
