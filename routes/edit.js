@@ -13,6 +13,10 @@ router.get('/:id', function (req, res, next) {
     result[req.params.id] = false;
     fs.writeFileSync(__dirname + '/../db.json', JSON.stringify(result, null, 2));
     res.send('Changed: ' + req.params.id + ': ' + req.query.status);
+  } else if (req.query.status === 'delete') {
+    delete result[req.params.id];
+    fs.writeFileSync(__dirname + '/../db.json', JSON.stringify(result, null, 2));
+    res.send('Changed: ' + req.params.id + ': ' + req.query.status);
   } else {
     res.send('Bad status: ' + req.query.status);
   }
