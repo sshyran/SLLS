@@ -9,7 +9,6 @@ router.get('/', function (req, res, next) {
 
 router.post('/:id/:status', function (req, res, next) {
     var result = JSON.parse(fs.readFileSync(__dirname + '/../db.json'));
-    console.log(req.params.status);
     if (["true", "false", "disable"].lastIndexOf(req.params.status) >= 0) {
         result[req.params.id] = req.params.status;
         fs.writeFileSync(__dirname + '/../db.json', JSON.stringify(result, null, 2));

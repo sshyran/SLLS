@@ -4,8 +4,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  var result = JSON.parse(fs.readFileSync(__dirname + '/../db.json'));
-  res.render('index', { title: 'SLLS', status: result });
+  res.render('index', { title: 'SLLS' });
+  fs.watch(__dirname + '/../db.json', function () {
+    res.io.emit("socketToMe", "users");
+  })
 });
 
 module.exports = router;

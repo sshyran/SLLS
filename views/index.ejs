@@ -42,35 +42,25 @@
     <div class="container">
         <div class="section">
 
-            <!--   Icon Section   -->
+
             <div id="update_section" class="row">
-<!--
-                <% for(var val in status) { %>
-                    <div class="col s12 m4 center">
-                        <% if(status[val]==="true"){ %>
-                        <div class="card hoverable waves-effect waves-light orange">
-                            <div class="card-content white-text">
-                                <span class="card-title"> 座位序号 <%= val %> </span>
-                                <p class="light"> 目前可以预约 </p>
+
+                <div class="main-loader">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-blue-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
                             </div>
-                            <div class="card-action">
-                                <a class="orange-text text-lighten-3" href="#">立即预约</a>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
                             </div>
                         </div>
-                        <% } else { %>
-                            <div class="card waves-effect grey lighten-2">
-                                <div class="card-content grey-text">
-                                    <span class="card-title"> 座位序号 <%= val %> </span>
-                                    <p class="light"> 目前无法预约 </p>
-                                </div>
-                                <div class="card-action">
-                                    <a class="grey-text" href="#">立即预约</a>
-                                </div>
-                            </div>
-                        <% } %>
                     </div>
-                <% } %>
--->
+                </div>
+
             </div>
 
         </div>

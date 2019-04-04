@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
   refresh();
+
+  var socket = io();
+  socket.on('socketToMe', function (data) {
+    refresh();
+  });
 });
 
 function refresh() {
